@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,500&display=swap');
+
+body {
+    background: #eff3fe;
+    
+   
+  }
+
+
+  .container{
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 5px;
+
+  }
+
+
+  .wrapper {
+    background: #dee6f6;
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    justify-content: center;
+    
+  }
+  .card {
+    width: 200px;
+    height: 300px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card__top {
+    background: #BCD1FF;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card__top img {
+    height: 90%
+  }
+  
+  .card__bottom {
+     height: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-family:sans-serif;
+  }
+  
+  .card__headline, .card__description, .card__details {
+    min-height: 5px;
+    
+  }
+
+  .card__headline{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #6E798C;
+  }
+
+  .card__description{
+    font-size: 10px;
+  }
+
+  h1{
+    font-size: 15px;
+  }
+  
+  .card__details{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 10px;
+    font-family: sans-serif;
+  }
+
+  .read{
+    font-size: 11px;
+    color: #007AE9;
+  }
+
+  i{
+    color: #007AE9;
+  }
+
+  .user__group{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+.img__over{
+    width: 20px;
+    height: 20px;
+    background-image:url(./assets/user.jpeg);
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+  @media screen and (max-width: 600px) {
+    
+    .container{
+        flex-direction: column;
+    }
+    
+    .card {
+      flex-direction: row;
+      height: 140px;
+      width: 100%;
+    }
+    
+    .card__top {
+        width: 250px;
+      height: 100%;
+    }
+
+    .card__top img{
+        height: 70%;
+    }
+
+
+    .card__details{
+        visibility: hidden;
+        flex-direction: row;
+        position: relative;
+        top: 25px;
+    }
+
+    .read{
+        visibility: visible;
+        overflow: auto;
+    }
+
+
+    .card__headline{
+        padding-bottom: 10px;
+    }
+
+    .card__description{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        overflow: hidden;
+    }
+
+
+
+    h1{
+        font-size: 20px;
+    }
+
+
+    .card__details{
+        padding-top: 10px;
+    }
+    
+    .wrapper {
+      flex-direction: column;
+    }
+  }
+
+
+
+
+/* media query a utilizar em mobile */
+/* para screen, entre 0 e o maximo width de 768px*/
+ 
